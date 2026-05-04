@@ -329,8 +329,15 @@
     .trust-item .num { font-size: 2.8rem; font-weight: 900; color: var(--clay); line-height: 1; margin-bottom: 0.3rem; }
     .trust-item p { font-size: 0.9rem; color: var(--ink-soft); font-weight: 500; }
  
-    footer { background: var(--ink); color: rgba(255,255,255,0.4); text-align: center; padding: 2rem; font-size: 0.85rem; }
+    footer { background: var(--ink); color: rgba(255,255,255,0.4); text-align: center; padding: 2.5rem 1.5rem; font-size: 0.85rem; }
     footer strong { color: var(--clay); }
+    .footer-links { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 1.2rem; }
+    .footer-links a { color: rgba(255,255,255,0.5); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--clay); }
+    .footer-social { display: flex; justify-content: center; gap: 1.2rem; margin-bottom: 1.5rem; }
+    .footer-social a { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.15); color: rgba(255,255,255,0.5); text-decoration: none; font-size: 1.1rem; transition: all 0.2s; }
+    .footer-social a:hover { border-color: var(--clay); color: var(--clay); }
+    .footer-divider { width: 60px; height: 1px; background: rgba(255,255,255,0.1); margin: 0 auto 1.2rem; }
  
     .zellige-divider {
       height: 6px;
@@ -355,7 +362,7 @@
  
   <nav>
     <div class="nav-logo">
-      معلم
+      معّلم
       <span>Maâlem</span>
     </div>
     <button class="nav-cta" onclick="document.getElementById('form-section').scrollIntoView({behavior:'smooth'})">
@@ -368,10 +375,10 @@
     <div class="hero-blob"></div>
  
     <div class="hero-content">
-      <div class="hero-badge">🇲🇦 &nbsp; Casablanca · Rabat · Marrakech</div>
+      <div class="hero-badge">🇲🇦 &nbsp; Casablanca — الدار البيضاء</div>
  
       <h1>
-        حتى مشكل<br/>
+        كل مشكل<br/>
         <em>عندو</em> معلمو
       </h1>
  
@@ -400,16 +407,20 @@
               </select>
             </div>
             <div class="form-group">
-              <label>المدينة</label>
+              <label>الحي (Quartier)</label>
               <select id="city">
                 <option value="">اختار...</option>
-                <option>الدار البيضاء</option>
-                <option>الرباط</option>
-                <option>مراكش</option>
-                <option>فاس</option>
-                <option>طنجة</option>
-                <option>اكادير</option>
-                <option>مدينة اخرى</option>
+                <option>المعاريف (Maarif)</option>
+                <option>عين الشق (Ain Chock)</option>
+                <option>عين السبع (Ain Sebaa)</option>
+                <option>البرنوصي (Bernoussi)</option>
+                <option>بن مسيك (Ben Msick)</option>
+                <option>الحي المحمدي (Hay Mohammadi)</option>
+                <option>الفداء (Fida)</option>
+                <option>مرس السلطان (Mers Sultan)</option>
+                <option>انفا (Anfa)</option>
+                <option>سيدي عثمان (Sidi Othmane)</option>
+                <option>حي اخر</option>
               </select>
             </div>
             <div class="form-group full">
@@ -499,7 +510,24 @@
   </section>
  
   <footer>
-    <p>2025 <strong>Maalem</strong> · Fait avec amour au Maroc</p>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/maalam.official" target="_blank" title="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61588919775378" target="_blank" title="Facebook">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      </a>
+      <a href="mailto:maalam.contact@gmail.com" title="Email">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+    </div>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="mailto:maalam.contact@gmail.com">Contact</a>
+    </div>
+    <div class="footer-divider"></div>
+    <p>&copy; 2025 <strong>Maâlem | معلم</strong> · Casablanca, Maroc</p>
   </footer>
  
   <script>
@@ -547,3 +575,4 @@
  
 </body>
 </html>
+ 
